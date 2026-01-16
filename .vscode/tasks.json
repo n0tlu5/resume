@@ -10,8 +10,8 @@
                 "-interaction=nonstopmode",
                 "-file-line-error",
                 "-pdf",
-                "-outdir=./out",
-                "darfi-sultoni-latex.tex"
+                "-outdir=./build",
+                "src/darfi-sultoni-ats.tex"
             ],
             "group": {
                 "kind": "build",
@@ -30,7 +30,7 @@
             "command": "latexmk",
             "args": [
                 "-c",
-                "-outdir=./out"
+                "-outdir=./build"
             ],
             "presentation": {
                 "reveal": "always",
