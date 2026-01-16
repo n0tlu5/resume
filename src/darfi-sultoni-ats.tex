@@ -1,0 +1,118 @@
+%-------------------------
+% Rover Resume - Base Template
+% Original by: Subidit (https://github.com/subidit/rover-resume)
+% Licensed under: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+% Modified by: Darfi Sultoni for personal resume use
+% Link: https://github.com/subidit/rover-resume
+%
+% Shows code for various formatting options for different resume sections.
+% Education and Projects have single-line headers; while Experience uses double-line.
+% Some formatting codes are kept inline; consider \newcommand{cmd}{def}.
+% Excludes hyperref and icons for readability; MVP version.
+% Explore other templates for more options.
+% Mix and match as desired. Be consistent with headers and sub-headers.
+%------------------------
+
+\documentclass[11pt]{article} % fontsize 10pt/11pt/12pt
+
+\usepackage[margin=1in, a4paper]{geometry}
+\setcounter{secnumdepth}{0} % remove section numbering
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*0}{*0} % remove vertical spacing above and below
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
+\titleformat*{\subsubsection}{\large\itshape}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep,left=0pt .. \parindent}
+\pagestyle{empty} % remove page number
+\pdfgentounicode=1
+
+
+\begin{document}
+
+\begin{center}
+	\begin{minipage}{0.5\textwidth}
+		{\Huge\bfseries
+			Darfi Sultoni
+		} \\ \medskip
+		Site Reliability Engineer
+	\end{minipage} \hfill
+	\begin{minipage}{0.4\textwidth}
+		\raggedleft
+		Email: darfisultoni@gmail.com \\
+		Mobile: +62 821 3250 1835 \\
+		Location: Pekanbaru, Indonesia \\
+		GitHub: github.com/n0tlu5
+	\end{minipage}
+\end{center}
+
+\section{Education}
+%=================%
+\subsection{Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia $|$ {\normalfont\itshape Computer Science, B.Sc.} \hfill 2017 -- 2021}
+\begin{itemize}
+	\item Cumulative GPA: 3.64/4.0
+\end{itemize}
+
+\section{Experience}
+%=================%
+\subsection{GDP Labs \hfill Jakarta, Indonesia}
+\subsubsection{Site Reliability Engineer, Full Time \hfill Nov 2021 -- Present}
+\begin{itemize}
+	\item Managed Cloud and On-Premises Infrastructure for Web and AI services
+	\item Managed a team of three maintaining microservices
+	\item Simplified workflows reducing toils
+	\item Tailored solutions ranging from development to serving
+\end{itemize}
+
+\subsection{GDP Labs \hfill Jakarta, Indonesia}
+\subsubsection{Site Reliability Engineer, Internship \hfill Jul 2021 -- Sep 2021}
+\begin{itemize}
+	\item Implemented a custom health check that enables load-balancing on DNS level
+	\item Contributed to PowerDNS open-source project
+\end{itemize}
+
+\subsection{Dinas Pendidikan Pemerintah Provinsi Riau \hfill Pekanbaru}
+\subsubsection{System Administrator, Contract \hfill Apr 2020 -- Aug 2020}
+\begin{itemize}
+	\item Introduced server setup automation using Ansible
+	\item Reduced errors due to miss configuration
+	\item Reduced time to deployment
+\end{itemize}
+
+\subsection{Dinas Pendidikan Pemerintah Provinsi Jawa Timur \hfill Surabaya}
+\subsubsection{Web Developer, Contract \hfill Mar 2019 -- Aug 2019}
+\begin{itemize}
+	\item Maintained a web app for more than 20000 student school registrations
+	\item Implemented geolocation-based ranking system
+\end{itemize}
+
+\section{Certification \& Awards}
+%===============================%
+\begin{enumerate}[label=\null, left=0pt..0pt, itemsep=0pt]
+	\item Oracle Cloud Infrastructure 2025 Certified DevOps \hfill Oct 2025 -- Oct 2027
+	\item Oracle Cloud Infrastructure 2025 Certified Foundations \hfill Oct 2025 -- Oct 2027
+\end{enumerate}
+
+\section{Skills \& Interests}
+%===========================%
+\begin{description}[itemsep=0pt]
+	\item[Infrastructure \& DevOps] Terraform (3), GCP (3), AWS (3), Docker (3), Kubernetes (2), Ansible (3), CICD (3), Git (5), Bash (5), Linux (6)
+	\item[Monitoring \& Observability] Grafana (1), Prometheus (1), ElasticSearch (1)
+	\item[Programming] Python (4), Javascript (4), PHP (2)
+\end{description}
+
+\section{Projects}
+%=================
+\subsection{CUKURin $|$ \normalfont\textit{Founder \& Software Engineer} \hfill}
+\begin{itemize}
+  \item On-demand haircut service startup
+  \item Built with Laravel, MySQL, Flutter and Linux
+\end{itemize}
+
+\subsection{PowerDNS (PDNS) $|$ \normalfont\textit{Open Source Contributor} \hfill}
+\begin{itemize}
+  \item Implemented pickselfweighted feature for DNS-level load balancing
+  \item C++ and DNS development
+\end{itemize}
+
+\end{document}
